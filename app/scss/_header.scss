@@ -33,6 +33,7 @@
     }
 
     nav {
+        z-index: 2;
         position: relative;
         background-color: $White;
         padding-top: 1.0625rem ;
@@ -51,6 +52,7 @@
     }
 
     &__toggle{  //desktop toggle menu
+        z-index: 1;
      > span{
         display: block;
         width: 26px;
@@ -69,6 +71,7 @@
 
 
     &__menu{
+        z-index: 1;
         position: absolute;
         width: calc(100% - 3rem);
         left: 50%;
