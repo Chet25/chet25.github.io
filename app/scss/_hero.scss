@@ -42,7 +42,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            background-image: url(/app/scss/bg-intro-desktop.svg?sanitize=true);
+            background-image: url('/images/bg-intro-desktop.svg');
             //background-size: 93%;
             background-repeat: no-repeat;
             background-position: left center;
@@ -62,7 +62,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            background-image: url(/app/scss/image-mockups.png?sanitize=true);
+            background-image: url('/images/image-mockups.png');
             background-repeat: no-repeat;
             background-position: center bottom;   
 
