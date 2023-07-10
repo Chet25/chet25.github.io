@@ -1,17 +1,14 @@
-.hero{
+.hero {
     background-color: $VeryLightGray;
 
+    .container {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
+    }
 
-.container {
-    
-    @include breakpoint-up(large){
-    display: flex;
-    align-items: center;
-    } 
-}
-
-
-    &__image{
+    &__image {
         position: relative;
         // background-image: url('../../images/image-restaurant.jpg');
         // background-image: url("./images/bg-intro-mobile.svg");
@@ -20,79 +17,67 @@
         background-position: center;
         min-height: 17.5rem;
 
-    @include breakpoint-up(medium){
-        min-height: 25rem;
-        background-position: center 60%;
-    }
+        @include breakpoint-up(medium) {
+            min-height: 25rem;
+            background-position: center 60%;
+        }
 
-
-     @include breakpoint-up(large){
-
+        @include breakpoint-up(large) {
             flex: 3;
             order: 2;
             height: 41rem;
             background-image: none;
             // background-image: url(/images/bg-intro-desktop.svg);
             //background-position: left center;
-        
-    }
+        }
 
-        &::before{
+        &::before {
             content: "";
             height: 100%;
             width: 100%;
             position: absolute;
-            background-image: url('../images/bg-intro-desktop.svg');
-            //background-size: 93%;
+            background-image: url("../images/bg-intro-desktop.svg");
+            background-size: 93%;
             background-repeat: no-repeat;
             background-position: left center;
 
-          
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 width: 150%;
                 background-size: 122%;
                 background-position: 0% 83%;
-
             }
         }
 
-
-        &::after{
+        &::after {
             content: "";
             height: 100%;
             width: 100%;
             position: absolute;
-            background-image: url('../images/image-mockups.png');
+            background-image: url("../images/image-mockups.png");
             background-repeat: no-repeat;
-            background-position: center bottom;   
+            background-size: 93%;
+            background-position: center bottom;
 
-            @include breakpoint-up(medium){
+            @include breakpoint-up(medium) {
                 background-size: 52%;
             }
-            
 
-            @include breakpoint-up(large){
+            @include breakpoint-up(large) {
                 height: 122%;
                 width: 120%;
                 background-size: 94%;
                 background-position: center 150%;
-                left: 22%;   
-    
+                left: 22%;
             }
         }
-
-
-
-    
-}
-    &__text{
+    }
+    &__text {
         text-align: center;
 
-     @include breakpoint-up(large){
-        flex: 2;
-        order: 1;
-        text-align: left;
-     }
-
+        @include breakpoint-up(large) {
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
     }
 }
